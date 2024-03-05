@@ -50,14 +50,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
-     * <p>Method adds a city to the list in the event the city is not already in it</p>
-     * @param city
-     *      this is a candidate city to add
+     * this adds a city object to the list
+     *the second phase, you can add the
+     city * @param city
      */
     public void addCity(City city){
-        if (cities.contains(city)){
-            throw new IllegalArgumentException();
-        }
         cities.add(city);
     }
 
